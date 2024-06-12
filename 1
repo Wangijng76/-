@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人网站</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>欢迎来到我的个人网站</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">主页</a></li>
+                <li><a href="#about">关于我</a></li>
+                <li><a href="#portfolio">作品集</a></li>
+                <li><a href="#blog">博客</a></li>
+                <li><a href="#guestbook">留言板</a></li>
+                <li><a href="#download">文件下载</a></li>
+                <li><a href="#quiz">互动问答</a></li>
+                <li><a href="#contact">联系方式</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>主页</h2>
+            <p>这里是我的个人网站主页。</p>
+        </section>
+        <section id="about">
+            <h2>关于我</h2>
+            <p>这里是关于我的信息。</p>
+        </section>
+        <section id="portfolio">
+            <h2>作品集</h2>
+            <p>这里是我的作品展示。</p>
+        </section>
+        <section id="blog">
+            <h2>博客</h2>
+            <p>这里是我的博客文章。</p>
+        </section>
+        <section id="guestbook">
+            <h2>留言板</h2>
+            <form id="guestbook-form">
+                <textarea id="message" placeholder="留下你的留言"></textarea><br>
+                <button type="button" onclick="submitMessage()">提交留言</button>
+            </form>
+            <div id="messages"></div>
+        </section>
+        <section id="download">
+            <h2>文件下载</h2>
+            <div id="download-files"></div>
+        </section>
+        <section id="quiz">
+            <h2>互动问答</h2>
+            <p id="quiz-question">这里会显示问题。</p>
+            <input type="text" id="quiz-answer" placeholder="你的答案"><br>
+            <button type="button" onclick="submitAnswer()">提交答案</button>
+        </section>
+        <section id="contact">
+            <h2>联系方式</h2>
+            <p>这里是我的联系信息。</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 我的个人网站</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
